@@ -135,6 +135,7 @@ function TaskFormModal({ onSubmit, initialData, isOpen, onClose }) {
             <textarea
               id="description"
               name="description"
+              pattern="[A-Za-z0-9 ]{3,500}"
               value={formData.description}
               onChange={handleChange}
               className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-shadow"
