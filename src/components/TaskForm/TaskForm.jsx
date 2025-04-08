@@ -109,6 +109,8 @@ function TaskFormModal({ onSubmit, initialData, isOpen, onClose }) {
               type="text"
               id="title"
               name="title"
+              autoFocus
+              pattern="[A-Za-z0-9 ]{3,50}"
               value={formData.title}
               onChange={handleChange}
               className={`w-full p-3 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-shadow ${
